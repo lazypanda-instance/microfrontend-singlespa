@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import '~bootstrap/scss/mixins/breakpoints';
+
+@include media-breakpoint-down(xs) {
+  app-all-content {
+    .left-side-container {
+      .mobile-header-style {
+        position: relative;
+        padding: 1rem 15px;
+        margin-right: -15px;
+        margin-left: -15px;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+      }
+    }
+  }
+}

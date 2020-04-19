@@ -1,0 +1,82 @@
+app-header {
+  .nav-backdround {
+    width: 100%;
+    background: rgb(89, 148, 171);
+    border-bottom: 1px solid rgba(216, 216, 216, 0.7);
+    z-index: 100 !important;
+  }
+
+  .nav::before .navbar-nav::before {
+    display: table;
+    content: " ";
+  }
+
+  .nav::after .navbar-nav::after {
+    clear: both;
+  }
+
+  .navbar-nav {
+    transition: all 0s ease-in-out;
+    margin: 7.5px -15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    overflow: hidden;
+
+    li {
+      display: inline;
+      position: relative;
+      cursor: pointer;
+
+      a {
+        background: rgb(89, 148, 171)!important;
+        border-image-slice: 1;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      ul {
+        display: none;
+      }
+    }
+
+    .sub-menu {
+      background: rgb(89, 148, 171);
+      margin-top: 3px;
+
+      li > a {
+        margin-left: -40px;
+      }
+    }
+  }
+
+  .navbar-nav>li:hover {
+    ul {
+      // visibility: visible;
+      display: block;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .navbar-right {
+      float: right!important;
+      margin-right: -15px;
+    }
+  }
+
+
+  .row-style {
+    width: 100%;
+    height: 50px;
+  }
+
+  .logo-position {
+    margin-top: 0px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+}

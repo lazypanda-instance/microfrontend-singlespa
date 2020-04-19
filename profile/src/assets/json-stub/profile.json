@@ -1,0 +1,38 @@
+{
+    "profile": {
+        "profileName": "lazy Panda",
+        "role": "Developer",
+        "profileImage": "https://bootdey.com/img/Content/avatar/avatar1.png",
+        "post": {
+            "noOfPost": 100
+        },
+        "likes": {
+            "noOfLikes": 50
+        },
+        "visitors": {
+            "noOfVisitors": 20
+        }
+    },
+    "distribution": [
+        {
+            "id": 1,
+            "type": "/email.png",
+            "content": "lazypanda.instance"
+        },
+        {
+            "id": 2,
+            "type": "/twitter.png",
+            "content": "Twitter link"
+        },
+        {
+            "id": 3,
+            "type": "/facebook.png",
+            "content": "facebook page link"
+        },
+        {
+            "id": 4,
+            "type": "/whatsapp.png",
+            "content": "9000000001"
+        }
+    ]
+}

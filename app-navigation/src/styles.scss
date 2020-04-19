@@ -1,0 +1,18 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import './app/common/app-header/app-header.component.scss';
+@import './app/common/app-header/app-header.component.mobile.scss';
+@import './app/all-content/all-content-pages/all-content.component.scss';
+@import './app/all-content/all-content-pages/all-content.component.mobile.scss';
+@import './app/all-content/widgets/widgets.component.scss';
+@import './app/all-content/technology/technology.component.scss';
+
+html, body {
+  overflow-x: hidden;
+}
+
+.main-container-width-with-header {
+  width: 100%;
+  height: calc(100% - 80px);
+  overflow: hidden;
+}

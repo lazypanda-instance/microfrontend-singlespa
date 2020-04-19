@@ -1,0 +1,52 @@
+<header>
+  <nav class="navbar navbar-light fixed-top nav-backdround">
+    <!-- For mobile side menu -->
+    <div #sidemenu id='sideMenuContent' class="mobile-menu">
+      <ul>
+        <li *ngFor="let menu of menuList">
+          <a (click)="mobileNavigateTo(menu)">{{ menu.title }}</a>
+          <!-- <ul>
+              <li *ngFor="let subMenu of menu.submenu">
+                <a style="border-top: solid 2px white;" [routerLink]='subMenu.navigation' [queryParams]="{type: subMenu.queryparam}">{{ subMenu.title }}</a>
+              </li>
+            </ul> -->
+        </li>
+      </ul>
+    </div>
+
+    <div class="row-style">
+      <!-- For xl, lg, md landscape -->
+      <div class="row m-0 d-none d-md-flex d-sm-flex">
+        <div class="col">
+          <label style="color: white;">App - 2: App navigation (Angular)</label>
+          <div class="float-right">
+            <ul class="nav navbar-nav navbar-right">
+              <li *ngFor="let menu of menuList">
+                <a [routerLink]='menu.navigation' routerLinkActive='active'>{{ menu.title }}</a>
+
+                <ul class="sub-menu">
+                  <li *ngFor="let subMenu of menu.submenu">
+                    <a style="border-top: solid 2px white;" [routerLink]='subMenu.navigation'
+                      [queryParams]="{type: subMenu.queryparam}" routerLinkActive='active'>{{ subMenu.title }}</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- For Mobile (sm, xs) portrait mode -->
+      <div class="d-flex d-sm-none w-100">
+        <!-- Hmburger icon, Close icon in -->
+        <div class="menu-button-position">
+          <button class="navbar-toggler" style="margin-top: 7px;" type="button" (click)="toggle()">
+            <span class="navbar-toggler-icon" *ngIf="isSideMenuOpen"></span>
+            <img class="close-btn" [src]='closeImageSrc' *ngIf="!isSideMenuOpen">
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</header>

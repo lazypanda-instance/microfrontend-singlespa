@@ -1,0 +1,62 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import '~bootstrap/scss/mixins/breakpoints';
+
+@include media-breakpoint-down(xs) {
+  app-header {
+    .header-height {
+      height: 80px;
+    }
+
+    .nav-toolbar {
+      height: 80px;
+    }
+  }
+
+  .logo-position {
+    margin-top: 0;
+    margin-left: auto !important;
+  }
+
+  .logo {
+    width: 80px;
+    cursor: pointer;
+  }
+
+  .close-btn {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  #sideMenuContent {
+    width: 100%;
+    position: fixed;
+    top: 69px;
+    left: 0;
+    height: 100%;
+    z-index: 999;
+    background: #2D6CAF;
+    color: #fff;
+    transition: all 0.3s;
+  }
+
+  .mobile-menu {
+    ul {
+      padding: 0;
+      list-style-type: none;
+      height: 65px;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        height: 100%;
+        margin: 0 25px;
+        border-bottom: 1px solid rgba(216, 216, 216, 0.7);
+        cursor: pointer;
+      }
+    }
+  }
+}

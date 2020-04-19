@@ -1,0 +1,123 @@
+.panel {
+    box-shadow: 0 2px 0 rgba(0,0,0,0.075);
+    border-radius: 0;
+    border: 0;
+    background:#ebeef0;
+}
+.panel .panel-heading, .panel>:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.bg-primary, .bg-primary a {
+    color: #fff;
+}
+.bg-primary {
+    background-color: #5fa2dd;
+}
+.bg-success, .bg-success a {
+    color: #fff;
+}
+.bg-success {
+    background-color: #91c957;
+}
+
+.widget-header {
+    padding: 15px 15px 50px 15px;
+    min-height: 125px;
+    position: relative;
+    overflow: hidden;
+}
+.panel .panel-footer, .panel>:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.widget-body {
+    padding: 50px 15px 15px;
+    position: relative;
+    color: white;
+    background: rgba(89, 171, 100, 1);
+}
+.panel-body {
+    padding: 25px 20px;
+}
+.pad-all {
+    padding: 15px;
+}
+.widget-img {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 50%;
+    margin-left: -32px;
+    top: -32px;
+}
+.img-md {
+    width: 64px;
+    height: 64px;
+}
+.widget-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.img-border-light {
+    box-shadow: 0 0 0 4px #fff;
+}
+.img-border {
+    box-shadow: 0 0 0 4px rgba(0,0,0,0.1);
+}
+.mar-no {
+    margin: 0 !important;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+}
+.text-muted, a.text-muted:hover, a.text-muted:focus, a.text-muted:focus {
+    color: white !important;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.mar-btm {
+    margin-bottom: 15px;
+}
+.pad-ver {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.pad-btm {
+    padding-bottom: 15px;
+}
+.pad-top {
+    padding-top: 8px;
+}
+.small, small {
+    font-size: 65%;
+}
+.text-lg {
+    font-size: 75%;
+}
+.btn {
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 0;
+    border: 1px solid 0;
+    font-size: 11px;
+    line-height: 1.42857;
+    vertical-align: middle;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+}
+
+.lbl-top {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.lbl-text {
+    font-size: 15px;
+}
+
+

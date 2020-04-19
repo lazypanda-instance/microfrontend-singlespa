@@ -1,0 +1,25 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "title": "Home",
+      "navigation": "home",
+      "submenu": []
+    },
+    {
+      "id": 1,
+      "title": "Technology",
+      "navigation": "technology",
+      "submenu": [
+        {
+          "title": "Angular",
+          "navigation": "/"
+        },
+        {
+          "title": "React",
+          "navigation": "/"
+        }
+      ]
+    }
+  ]
+}

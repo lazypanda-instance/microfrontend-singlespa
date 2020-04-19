@@ -1,0 +1,45 @@
+{
+  "name": "profile",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "html-loader": "^0.5.5",
+    "kremling": "^2.0.2",
+    "prop-types": "^15.7.2",
+    "single-spa-react": "2.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:profile",
+    "start": "npm run start:profile",
+    "build:profile": "webpack --config ./webpack.config.js -p",
+    "start:profile": "webpack-dev-server --config ./webpack.dev.js --port 4500"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "9.1.5",
+    "babel-core": "6.26.3",
+    "babel-loader": "^8.0.0",
+    "clean-webpack-plugin": "0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "file-loader": "^5.0.2",
+    "kremling-loader": "^1.0.2",
+    "postcss-flexbugs-fixes": "^4.2.0",
+    "postcss-loader": "3.0.0",
+    "style-loader": "^0.23.0",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "4.17.1",
+    "webpack-cli": "3.1.0",
+    "webpack-dev-server": "^3.3.1"
+  }
+}

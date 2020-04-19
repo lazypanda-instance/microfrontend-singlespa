@@ -1,0 +1,29 @@
+app-all-content {
+
+  .fixed-position {
+    position: absolute;
+    top: 67px;
+  }
+
+  .left-side-container {
+    order: 0;
+  }
+
+  .middle-side-container {
+    order: 1;
+    overflow-y: auto;
+  }
+
+  .right-side-container {
+    order: 2;
+    border-left: 1px solid rgba(0,0,0,.1);
+  }
+
+  @media (min-width: 768px) {
+    .left-side-container {
+      position: sticky;
+      height: calc(100vh - 4rem);
+      border-right: 1px solid rgba(0,0,0,.1);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "container app",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --kill-others --kill-others-on-fail -p name --names \"config,common-deps\" \"npm run start:config\" \"npm run start:common-deps\"",
+    "build": "npm run build:config && npm run build:common-deps",
+    "build:config": "webpack --config ./webpack.config.config.js -p",
+    "start:config": "webpack-dev-server --config ./webpack.config.config.dev.js --port 4200",
+    "build:common-deps": "webpack --config ./webpack.common-deps.config.js -p",
+    "start:common-deps": "webpack-dev-server --config ./webpack.common-deps.config.dev.js --port 4100"
+  },
+  "author": "LazyPanda Tech",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-syntax-dynamic-import": "7.0.0",
+    "@babel/preset-env": "^7.4.3",
+    "babel-core": "6.26.3",
+    "babel-loader": "8.0.0",
+    "clean-webpack-plugin": "0.1.19",
+    "concurrently": "4.0.1",
+    "copy-webpack-plugin": "4.5.2",
+    "css-loader": "1.0.0",
+    "style-loader": "0.23.0",
+    "webpack": "4.17.1",
+    "webpack-cli": "3.1.0",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
