@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "html-loader": "^0.5.5",
     "kremling": "^2.0.2",
     "prop-types": "^15.7.2",
